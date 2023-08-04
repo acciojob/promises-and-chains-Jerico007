@@ -17,11 +17,11 @@ element.addEventListener("submit", (event) => {
     }, 4000);
   });
 
-  prom.then((data)=>{
+ let x = prom.then((data)=>{
     alert(`Welcome, ${data}. You can vote.`);
   })
 
-  prom.catch((data)=>{
+  x.catch((data)=>{
     alert(`Oh sorry ${data}. You aren't old enough.`);
   })
 });
